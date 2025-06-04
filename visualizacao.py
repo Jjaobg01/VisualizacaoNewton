@@ -43,7 +43,7 @@ def obter_fator_passo(fator=1.0):
     return float(fator)
 
 
-# MÉTODO DE NEWTON / NEWTON MODIFICADO GENERALIZADO
+# METODO DE NEWTON / NEWTON MODIFICADO GENERALIZADO
 
 def metodo_newton(f_num, grad_f, hess_f, x0,
                   metodo='newton',
@@ -69,7 +69,7 @@ def metodo_newton(f_num, grad_f, hess_f, x0,
     Retorna:
     - historico: array de forma (it+1, 2) com os pontos x^(k)
     """
-    # Se não vier fator_passo, use 1.0 sempre
+    # se nao vier fator_passo, use 1.0 sempre
     if fator_passo is None:
         fator_passo = obter_fator_passo(1.0)
 
